@@ -303,12 +303,12 @@ function counterMaker() {
 
 function counterMakerWithLimit(limit) {
   /* CODE HERE */
-  let count = 0;
+  let count = -1;
     return function(){
       
-      if (count <= limit){
+      if (count < limit){
         // console.log(count++);
-        return count++;
+        return count = count + 1;
       } else {
         // console.log(count = 0);
         return count = 0;
@@ -316,24 +316,24 @@ function counterMakerWithLimit(limit) {
     }
 };
 
-const counter = counterMakerWithLimit(3)
-counter() // should return 0
-counter() // should return 1
-counter() // should return 2
-counter() // should return 3
-counter() // should return 0
-counter() // should return 1
-counter() // should return 2
-counter() // should return 3
-counter() // should return 0
-counter() // should return 1
-counter() // should return 2
-counter() // should return 3
-counter() // should return 0
-counter() // should return 1
-counter() // should return 2
-counter() // should return 3
-counter() // should return 0
+// const counter = counterMakerWithLimit(3)
+// counter() // should return 0
+// counter() // should return 1
+// counter() // should return 2
+// counter() // should return 3
+// counter() // should return 0
+// counter() // should return 1
+// counter() // should return 2
+// counter() // should return 3
+// counter() // should return 0
+// counter() // should return 1
+// counter() // should return 2
+// counter() // should return 3
+// counter() // should return 0
+// counter() // should return 1
+// counter() // should return 2
+// counter() // should return 3
+// counter() // should return 0
 
 /////////////// END OF CHALLENGE ///////////////
 /////////////// END OF CHALLENGE ///////////////
